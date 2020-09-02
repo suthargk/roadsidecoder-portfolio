@@ -1,0 +1,120 @@
+/*
+COLORS:
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+::selection {
+  background-color: #2962ff;
+  color: #fff; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", "Lato", sans-serif;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 1.7;
+  background-color: #fff; }
+
+.heading-primary {
+  font-size: 4rem;
+  line-height: 1.4; }
+  .heading-primary--main {
+    color: #333; }
+  .heading-primary--sub {
+    color: #2962ff;
+    animation: OutIn 2s cubic-bezier(0.4, 0, 0.6, 1); }
+
+@keyframes OutIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.heading-short {
+  margin-bottom: 2rem;
+  padding-left: 6.8rem;
+  font-weight: 600;
+  color: #2962ff;
+  position: relative; }
+  .heading-short::before {
+    content: " ";
+    height: .34rem;
+    background-color: #2962ff;
+    display: block;
+    width: 5rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 0; }
+
+.stacks {
+  display: flex;
+  justify-content: center; }
+
+.stack {
+  height: 54px;
+  width: 54px;
+  min-width: 54px;
+  display: flex;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .5rem; }
+  .stack__img {
+    display: block;
+    height: 40px;
+    width: 40px;
+    max-width: 100%; }
+
+.header {
+  height: 95vh;
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 3rem;
+    left: 6.7rem; }
+  .header__container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10rem; }
+  .header__navigation {
+    position: absolute; }
+
+.logo {
+  height: 3rem; }
+
+.image {
+  width: 50rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row ::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 0.4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 0.4rem) / 2); }
+
+.section-skills {
+  padding: 10rem;
+  max-width: 100%;
+  margin: 0 auto; }

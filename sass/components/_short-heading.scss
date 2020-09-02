@@ -1,0 +1,19 @@
+.heading-short {
+    margin-bottom: 2rem;
+    padding-left: 6.8rem;
+    font-weight: 600;
+    color: $color-primary-light;
+    position: relative;
+    
+
+    &::before {
+        content: " ";
+        height: .34rem;
+        background-color: $color-primary-light;
+        display: block;
+        width: 5rem;
+        position: absolute;
+        top: 1.2rem;
+        left: 0;
+    }
+}

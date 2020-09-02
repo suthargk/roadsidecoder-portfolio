@@ -1,0 +1,24 @@
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", "Lato", sans-serif;
+    font-weight: 400;
+
+    color: #4a4a4a;
+    line-height: 1.7;
+    background-color: $color-white;
+}
+
+.heading-primary {
+    
+    font-size: 4rem;
+    line-height: 1.4;
+
+    &--main {
+        color: $color-gray-text;
+    }
+    &--sub {
+        color: $color-primary-light;
+        animation: OutIn 2s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+}
