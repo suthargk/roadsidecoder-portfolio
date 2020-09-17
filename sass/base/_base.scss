@@ -4,7 +4,7 @@
     box-sizing: inherit; }
 
 ::selection {
-    background-color: $color-primary-light;
+    background-color: $color-purple;
     color: $color-white;
 }
 
@@ -15,4 +15,7 @@ html {
 
 body {
     box-sizing: border-box;
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding: 8rem;
 }

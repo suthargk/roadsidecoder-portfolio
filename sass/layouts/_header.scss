@@ -1,38 +1,64 @@
 .header {
 
-    // background-image: linear-gradient(to right bottom, rgba(153, 51, 255, 0.808), rgba(128, 0, 255, 0.801)), url(../img/hero.jpg);
-    // background-position: top;
-    // background-size: cover;
-    height: 95vh;
-    // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    height: 60vh;
+    margin-top: 10rem;
+    }
+
+@include clearfix;
+.navigation {
     position: relative;
-    
-        &__logo {
-            position: absolute;
-            top: 3rem;
-            left: 6.7rem;
-        }
 
-        &__container {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding-top: 10rem;
-        }
-
-        &__navigation {
-            position: absolute;
-        }
-        
+    &__logo {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        float: left;
     }
     
+
+    &__list {
+        float: right;
+        list-style: none;
+        
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 2rem 1rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        
+        &:link,
+        &:visited {
+           display: inline-block;
+            text-decoration: none;
+            color: $color-grey-light-2;
+            font-size: 1.4rem;
+            transition: all .2s;
+        }
+
+        &:hover {
+            color: $color-purple;
+        }
+
+        span {
+            display: inline-block;
+            margin-right: 1rem;
+            background-image: linear-gradient(to right bottom, $color-purple, $color-pink);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+    }
+}
+
+
+
 .logo {
-    height: 3rem;
+    height: 4rem;
 }
-
-.image {
-    width: 50rem;
-}
-

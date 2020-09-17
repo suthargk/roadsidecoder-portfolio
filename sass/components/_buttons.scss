@@ -1,0 +1,30 @@
+
+.links {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-purple;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-purple;
+    transition: color .2s;
+    
+
+    &__arrow {
+        display: inline-block;
+        transition: padding-left .2s;
+    }
+    
+
+    &:hover &__arrow {
+        padding-left: .4rem;
+        font-size: 1.78rem;
+    }
+
+    &:hover {
+        color: $color-grey-light-2;
+        border-bottom: 1px solid $color-grey-light-2;
+    }
+    
+}

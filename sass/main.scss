@@ -10,10 +10,12 @@ COLORS:
 @import "base/animations";
 
 @import "components/short-heading";
-@import "components/skills";
-
+@import "components/utilities";
+@import "components/buttons";
 
 @import "layouts/header";
+@import "layouts/sections";
 @import "layouts/grid";
+@import "layouts/about_image";
 
 @import "pages/home"
