@@ -1,14 +1,14 @@
 .contact {
-    margin-left: 6rem;
+    margin-left: 10rem;
+    position: relative;
 
     &__list {
         list-style: none;
+        padding-left: 5rem;
     }
 
     &__item {
-        display: block;
         padding: 0.7rem;
-
         
     }
 
@@ -35,4 +35,16 @@
     span {
         display: inline-block;
     }
+
+    &__crystal {
+        position: absolute;
+        bottom: 0;
+        right: 4rem;
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
 }
