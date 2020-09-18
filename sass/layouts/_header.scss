@@ -61,4 +61,8 @@
 
 .logo {
     height: 4rem;
+    transition: all .8s cubic-bezier(1,0,0,1);
+    &:hover {
+        transform: rotate(1turn);
+    }
 }

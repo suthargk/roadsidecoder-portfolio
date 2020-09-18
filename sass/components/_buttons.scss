@@ -8,17 +8,19 @@
     line-height: 1.4;
     padding-bottom: 1rem;
     border-bottom: 1px solid $color-purple;
+    
     transition: color .2s;
     
 
     &__arrow {
         display: inline-block;
-        transition: padding-left .2s;
+        transition: padding-left .2s ease;
+        padding-left: .3rem;
     }
     
 
     &:hover &__arrow {
-        padding-left: .4rem;
+        padding-left: .6rem;
         font-size: 1.78rem;
     }
 
@@ -27,4 +29,8 @@
         border-bottom: 1px solid $color-grey-light-2;
     }
     
+}
+
+.link-center {
+    text-align: center;
 }

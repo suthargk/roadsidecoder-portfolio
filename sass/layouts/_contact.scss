@@ -1,0 +1,38 @@
+.contact {
+    margin-left: 6rem;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: block;
+        padding: 0.7rem;
+
+        
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-grey-light-4;
+        transition: all .3s ease-out;
+
+        &:hover {
+            color: $color-purple;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        font-size: 1.5rem;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    span {
+        display: inline-block;
+    }
+}
