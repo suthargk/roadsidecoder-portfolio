@@ -1,12 +1,33 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit; }
+    box-sizing: inherit; 
+}
 
 ::selection {
     background-color: $color-purple;
     color: $color-white;
+
 }
+
+::-webkit-scrollbar {
+ 
+    width: 8px;
+    background-color: $color-white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius : 10px;
+    background: linear-gradient(to right bottom, $color-purple, $color-pink);
+    box-shadow: 0 1rem 3rem rgba($color-black, .4);
+    
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: white;
+}
+
 
 html {
     font-size: 62.5%;
@@ -16,6 +37,7 @@ html {
 body {
     box-sizing: border-box;
     padding: 4rem;
+    
 }
 
 #stars {

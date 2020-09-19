@@ -10,6 +10,19 @@ COLORS:
   background-color: #8f12fd;
   color: #fff; }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, #8f12fd, #ff00b6);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4); }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white; }
+
 html {
   font-size: 62.5%; }
 
@@ -298,6 +311,14 @@ body {
   transition: all 0.8s cubic-bezier(1, 0, 0, 1); }
   .logo:hover {
     transform: rotate(1turn); }
+
+.hero-image {
+  margin-top: -3rem;
+  margin-left: 3rem; }
+
+.moon {
+  height: 50rem;
+  width: 50rem; }
 
 .section-about {
   margin: 5rem 0; }
