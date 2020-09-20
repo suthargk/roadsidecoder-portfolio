@@ -57,3 +57,23 @@
         margin-right: .5rem;
     }
 }
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(rgba($color-purple, .99), rgba($color-magenta, .99)); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-size: 5.5rem;
+    
+
+    &:not(:last-child) {
+        margin-right: 4rem;
+    }
+}
+
+.demo {
+    font-size: 4.6rem;
+}
