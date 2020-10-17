@@ -33,7 +33,6 @@
 }
 
 .color {
-    fill: #f6f5ff;
     width: 20px;
     height: 20px;
     align-self: center;
@@ -43,7 +42,7 @@
     width: 50%;
 
     &__icon {
-
+        list-style: none;
         display: flex;
         flex-direction: row wrap;
         justify-content: space-between;
@@ -89,3 +88,47 @@
     border-width: 0 1px 1px 0;
 }
 
+.circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 3s;
+    width: 50px;
+    height: 50px;
+    animation: MoveInRight 8s linear .75s;
+    opacity: 0;
+    
+    svg {
+        width: 50px;
+        height: 50px;
+        animation: Spin 1s linear infinite .75s;
+    }
+}
+
+@keyframes Spin {
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveInRight{
+
+    from {
+        left: 0;
+        transform: translateX(0);
+        opacity: 1;
+        // opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
