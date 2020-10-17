@@ -1,0 +1,31 @@
+.header {
+    background-color: #8000ff;
+    height: 85vh;
+   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box {
+    max-width: 114rem;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}

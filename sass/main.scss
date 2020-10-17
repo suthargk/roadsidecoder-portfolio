@@ -1,25 +1,6 @@
-/*
-COLORS:
-*/
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
 
-@import "base/base";
-@import "base/typography";
-@import "base/animations";
-
-@import "components/short-heading";
-@import "components/utilities";
-@import "components/buttons";
-@import "components/icons";
-@import "components/cards";
-
-@import "layouts/header";
-@import "layouts/sections";
-@import "layouts/grid";
-@import "layouts/about_image";
-@import "layouts/contact";
-@import "layouts/footer";
-
-@import "pages/home"
+@import "base";
+@import "home";
+@import "typography";
+@import "components";
