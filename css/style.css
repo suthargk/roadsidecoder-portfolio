@@ -212,7 +212,7 @@ body {
   position: fixed;
   top: -1px;
   left: 50%;
-  animation: Shake .8s linear .75s; }
+  animation: Shake .8s linear .5s; }
   .light-bulb i {
     display: inline-block;
     font-size: 260%;
