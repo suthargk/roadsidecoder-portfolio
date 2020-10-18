@@ -201,8 +201,7 @@ body {
   height: 50px;
   filter: drop-shadow(-10px 5px 5px #010101);
   animation: MoveInRight 8s linear .75s;
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 0; }
   .circle i {
     display: inline-block;
     font-size: 400%;
