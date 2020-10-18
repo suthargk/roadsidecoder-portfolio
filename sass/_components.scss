@@ -3,6 +3,7 @@
     flex-direction: row;
     width: auto;
     margin-top: 3rem;
+
 }
 
 .btn {
@@ -48,15 +49,15 @@
         justify-content: space-between;
         align-items: center;
         padding: 3rem;
-        // border: 1px solid #fff;
+      
 
         i {
             font-size: 400%;
         }
 
-
     }
 }
+
 
 .content {
     position: relative;
@@ -100,43 +101,32 @@
     opacity: 0;
    
     
-    svg {
-        width: 50px;
-        height: 50px;
+    i {
+        display: inline-block;
+        
+        font-size: 400%;
         animation: Spin 1s linear infinite .75s;
     }
 }
 
-@keyframes Spin {
-    from {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
 
-    to {
-        transform: rotate(360deg);
-        opacity: 1;
+.light-bulb {
+    position: fixed;
+    top: -1px;
+    left: 50%;
+    animation: Shake .8s linear;
+ 
+    i {
+        display: inline-block;
+        font-size: 260%;
+        transform: rotate(180deg);
+        filter: drop-shadow(0 -5px 4px #f0eeee);
     }
 }
 
-@keyframes MoveInRight{
-
-    from {
-        left: -5%;
-        transform: translateX(0);
-        opacity: 1;
-        filter: drop-shadow(-15px 5px 5px  hsl(0, 0%, .2));
-        // opacity: 1;
-    }
-
-    70% {
-        filter: drop-shadow(10px -5px 5px  hsl(0, 0%, .2));
-    }
-
-    to {
-        left: 105%;
-        transform: translateX(-100%);
-        opacity: 1;
-        filter: drop-shadow(10px -5px 5px  hsl(0, 0%, .2));
-    }
+.box {
+    display: block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
 }
