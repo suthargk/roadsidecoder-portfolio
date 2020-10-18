@@ -99,7 +99,7 @@
     filter: drop-shadow(-10px 5px 5px  hsl(0, 0%, .2));
     animation: MoveInRight 8s linear .75s;
     opacity: 0;
-   
+    visibility: hidden;
     
     i {
         display: inline-block;
