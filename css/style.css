@@ -23,6 +23,7 @@ body {
   position: relative;
   background-color: #8000ff;
   height: 85vh;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
