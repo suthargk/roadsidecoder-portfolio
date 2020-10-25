@@ -1,26 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
 }
 
+:root {
+    --color-primary: #8000ff;
+    --color-secondary: rgba(246,245,255, 0.1875);
+
+    --color-white: #fff;
+
+    --color-dark-1: #475569;
+    --color-light-1: #f6f5ff;
+
+    --color-background-light: #f8fafc;
+}
 
 ::selection {
-    color: #8000ff;
+    color: var(--color-primary);
     background-color: rgba(255, 255, 255, 0.99);
   } 
 
+
+
 html {
     box-sizing: border-box;
-    font-size: 62.5%;        // 10px / 16px --> 62.5% which is 1rem = 10px;
+    font-size: 62.5%;        // 10px / 16px --> 62.5% which means 1rem = 10px;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;          // 8px / 16px --> 50% which means 1rem = 8px;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;       // 6px / 16px --> 37.5% which means 1rem = 6px;
+    }
+
 }
 
 body {
     font-family: 'Lato', 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: var(--color-light-1);
     line-height: 1.6;
+    background-color: black;
 
 }
