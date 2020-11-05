@@ -113,11 +113,13 @@ body {
     font-weight: 500; }
   .heading-primary--icon {
     filter: drop-shadow(0 0 1rem #f0eeee);
+    -webkit-filter: drop-shadow(0 0 1rem #f0eeee);
     font-size: 3rem; }
 
 .introduction {
   font-size: 2.1rem;
   font-weight: 300;
+  text-align: center;
   display: flex;
   justify-content: center; }
   @media (max-width: 37.5em) {
@@ -281,7 +283,7 @@ body {
 
 .content:after {
   bottom: 10px;
-  right: -5px;
+  right: 25px;
   border-width: 0 1px 1px 0; }
 
 .circle {
