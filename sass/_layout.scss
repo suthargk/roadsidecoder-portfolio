@@ -1,43 +1,39 @@
 .header {
-    position: relative;
-    background-color: var(--color-primary);
-    min-height: 85vh;
-    overflow: hidden;
+  position: relative;
+  background-color: var(--color-primary);
+  min-height: 85vh;
+  overflow: hidden;
 
-    @include respond(tab-port) {
-        min-height: 0;
-    }
+  @include respond(tab-port) {
+    min-height: 0;
+  }
 }
 
 .hero-box {
-    padding: 5rem;
+  padding: 5rem;
 
-    @include respond(tab-land) {
-        padding-top: 10rem;
-    }
+  @include respond(tab-land) {
+    padding-top: 10rem;
+  }
 
-    @include respond(phone) {
-        
-        padding: 3rem;
-        padding-top: 10rem;
-    }
-
+  @include respond(phone) {
+    padding: 3rem;
+    padding-top: 10rem;
+  }
 }
 
 .skills-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    @include respond(tab-port) {
-        margin-top: 5rem;
-    }
-
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
 }
 
 .section-project {
-    color: var(--color-dark-1);
-
-    display: flex;
-    justify-content: center;
+  color: var(--color-dark-1);
+  padding: 4rem 2rem;
+  background-color: var(--color-background-light);
 }

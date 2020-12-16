@@ -1,53 +1,51 @@
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 :root {
-    --color-primary: #8000ff;
-    --color-secondary: rgba(246,245,255, 0.1875);
+  --color-primary: #8000ff;
 
-    --color-white: #fff;
+  --color-primary-light: #a244ff;
+  --color-primary-dark: #6f00dd;
+  --color-secondary: rgba(246, 245, 255, 0.1875);
 
-    --color-dark-1: #475569;
-    --color-light-1: #f6f5ff;
+  --color-white: #fff;
 
-    --color-background-light: #f8fafc;
+  --color-dark-1: #475569;
+  --color-light-1: #f6f5ff;
+
+  --color-background-light: #f8fafc;
 }
 
 ::selection {
-    color: var(--color-primary);
-    background-color: rgba(255, 255, 255, 0.99);
-  } 
-
-
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.99);
+}
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;        // 10px / 16px --> 62.5% which means 1rem = 10px;
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px --> 62.5% which means 1rem = 10px;
 
-    @include respond(tab-land) {
-        font-size: 56.25%;          // 8px / 16px --> 50% which means 1rem = 8px;
-    }
+  @include respond(tab-land) {
+    font-size: 56.25%; // 8px / 16px --> 50% which means 1rem = 8px;
+  }
 
-    @include respond(tab-port) {
-        font-size: 50%;       // 6px / 16px --> 37.5% which means 1rem = 6px;
-    }
-
+  @include respond(tab-port) {
+    font-size: 50%; // 6px / 16px --> 37.5% which means 1rem = 6px;
+  }
 }
 
 body {
-    font-family: 'Lato', 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: var(--color-light-1);
-    line-height: 1.6;
-    background-color: black;
-
+  font-family: "Lato", "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--color-light-1);
+  line-height: 1.6;
+  // background-color: black;
 }
