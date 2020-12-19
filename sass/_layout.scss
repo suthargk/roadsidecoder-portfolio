@@ -35,5 +35,22 @@
 .section-project {
   color: var(--color-dark-1);
   padding: 4rem 2rem;
-  background-color: var(--color-background-light);
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+
+  position: relative;
+}
+
+.section-project::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 12rem;
+  background-image: radial-gradient(black 2px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  opacity: 0.08;
 }
