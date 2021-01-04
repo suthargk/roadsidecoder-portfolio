@@ -202,6 +202,11 @@ body {
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
   letter-spacing: 1.2px; }
+  .heading-tertiary_description {
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+    word-spacing: 1.3px;
+    color: rgba(55, 65, 81, var(--tw-text-opacity)); }
 
 @keyframes Spin {
   from {
@@ -380,9 +385,22 @@ body {
   align-items: flex-start;
   padding-left: 2rem;
   margin-top: 1rem; }
+  @media (max-width: 37.5em) {
+    .text-box-left {
+      margin-bottom: 3rem; } }
 
 .project {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  @media (max-width: 37.5em) {
+    .project {
+      flex-direction: column; } }
+  .project_description {
+    flex-basis: 45%; }
+    @media (max-width: 37.5em) {
+      .project_description {
+        display: none; } }
   .project-text {
     font-size: 1.4rem;
     font-weight: 400;
@@ -390,24 +408,39 @@ body {
     --tw-text-opacity: 1;
     width: 88%;
     color: rgba(156, 163, 175, var(--tw-text-opacity)); }
+    .project-text_description {
+      font-size: 1.7rem;
+      line-height: 1.7;
+      color: rgba(75, 85, 99, var(--tw-text-opacity)); }
   .project_left {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 37.5em) {
+      .project_left {
+        flex-basis: 100%; } }
     .project_left__card {
       width: 80%;
       border-radius: 5px;
+      margin-top: 2.5rem;
       background-color: #fff;
       position: relative;
       box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025); }
+      @media (max-width: 37.5em) {
+        .project_left__card {
+          width: 90%; } }
       .project_left__card_image-right {
         width: 20%;
         position: absolute;
         right: 0;
         top: 0;
-        transform: translateX(16px) translateY(-16px); }
+        transform: translateX(1.8rem) translateY(-1.6rem); }
+        @media (max-width: 37.5em) {
+          .project_left__card_image-right {
+            right: 1.8rem;
+            top: -1rem; } }
       .project_left__card__first {
         padding: 2rem 4rem; }
       .project_left__card--button:visited, .project_left__card--button:link {

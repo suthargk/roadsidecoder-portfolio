@@ -161,10 +161,27 @@
   align-items: flex-start;
   padding-left: 2rem;
   margin-top: 1rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
 }
 
 .project {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &_description {
+    flex-basis: 45%;
+    @include respond(phone) {
+      display: none;
+    }
+  }
 
   &-text {
     font-size: 1.4rem;
@@ -173,6 +190,12 @@
     --tw-text-opacity: 1;
     width: 88%;
     color: rgba(156, 163, 175, var(--tw-text-opacity));
+
+    &_description {
+      font-size: 1.7rem;
+      line-height: 1.7;
+      color: rgba(75, 85, 99, var(--tw-text-opacity));
+    }
   }
 
   &_left {
@@ -182,9 +205,14 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(phone) {
+      flex-basis: 100%;
+    }
+
     &__card {
       width: 80%;
       border-radius: 5px;
+      margin-top: 2.5rem;
       background-color: #fff;
       position: relative;
 
@@ -192,13 +220,21 @@
         0 8px 16px -8px rgba(0, 0, 0, 0.3),
         0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 
+      @include respond(phone) {
+        width: 90%;
+      }
+
       &_image-right {
         width: 20%;
 
         position: absolute;
         right: 0;
         top: 0;
-        transform: translateX(16px) translateY(-16px);
+        transform: translateX(1.8rem) translateY(-1.6rem);
+        @include respond(phone) {
+          right: 1.8rem;
+          top: -1rem;
+        }
       }
 
       &__first {
